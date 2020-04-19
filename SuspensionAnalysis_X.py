@@ -21,10 +21,11 @@ tiredeformation = (4.83 - 2)/2 #inches, can be ajusted, based on pepsi can
 numberOfArms = 4
 
 # Assumptions
-mass = 15 #lbs 
+acceleration = 32.2 #ft/s 
+weight = 15 #lbs
+mass = weight/acceleration #lbs 
 dropHeight = 10 #ft
 deltaVelocity = np.sqrt(2*mass*dropHeight)
-acceleration = 32.2 #ft/s 
 safetyFactor = 2
 stressConcentrationX = holeDiamter/width # = .56
 stressConcentrationLine = holeDiamter/thickness # = .3733
